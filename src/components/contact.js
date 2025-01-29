@@ -40,13 +40,16 @@ function Contact() {
     }
 
     try {
-      const response = await fetch("http://localhost:3000/contactus", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData), // ✅ Send the updated state
-      });
+      const response = await fetch(
+        "https://bliss-react-backend.onrender.com/contactus",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData), // ✅ Send the updated state
+        }
+      );
 
       if (response.ok) {
         console.log("Submission successful");

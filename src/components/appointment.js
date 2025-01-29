@@ -33,16 +33,19 @@ function Appointment() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:3000/submit-form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ...formData,
-          access_key: "YOUR_WEB3FORMS_API_KEY",
-        }),
-      });
+      const response = await fetch(
+        "https://bliss-react-backend.onrender.com/submit-form",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            ...formData,
+          //  access_key: "YOUR_WEB3FORMS_API_KEY",
+          }),
+        }
+      );
   
       if (response.ok) {
         console.log('Submission successful');
