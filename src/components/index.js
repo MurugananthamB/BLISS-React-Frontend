@@ -588,12 +588,11 @@ function Index() {
                   <p className="mb-4">
                     Doctor training involves completing a medical degree,
                     followed by clinical rotations and hands-on experience. It
-                    covers subjects like anatomy, physiology, and medical
-                    procedures. Doctors must complete residency programs for
-                    specialized practice. Licensing, practical skills
-                    development, and continuing education are essential for
-                    maintaining qualifications and providing high-quality
-                    patient care.
+                    covers subjects like anatomy, physiology, and procedures.
+                    Doctors must complete residency programs for specialized
+                    practice. Licensing, skills development, and continuing
+                    education are essential for maintaining qualifications and
+                    providing high-quality care.
                   </p>
                 </div>
               </div>
@@ -1200,7 +1199,8 @@ function Index() {
                   &copy; Copyright Reserved to <span> Bliss by </span>{" "}
                   <a
                     href="https://adhiparasakthihospitals.com/"
-                    target="_blank" rel="noreferrer"
+                    target="_blank"
+                    rel="noreferrer"
                   >
                     {" "}
                     APH-IT{" "}
