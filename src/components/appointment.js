@@ -42,7 +42,7 @@ function Appointment() {
           },
           body: JSON.stringify({
             ...formData,
-            access_key: "YOUR_WEB3FORMS_API_KEY",
+          //  access_key: "YOUR_WEB3FORMS_API_KEY",
           }),
         }
       );
