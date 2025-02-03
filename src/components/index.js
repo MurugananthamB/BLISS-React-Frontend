@@ -361,7 +361,7 @@ function Index() {
         <div className="container">
           <div className="row align-items-center">
             {/* Image Section */}
-            <div className="col-lg-7 col-sm-12 mb-4 mb-lg-0">
+            <div className="col-lg-7 col-sm-12 mb-4 mb-lg-0 d-flex justify-content-center align-items-center">
               <div className="about-img">
                 <img
                   src="images/about/img-3.jpg"
