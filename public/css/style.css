@@ -471,11 +471,12 @@ a:focus {
   background: url("../images/bg/slider-bg-5.jpeg") no-repeat center center;
   background-size: cover; /* Cover for larger screens */
   background-position: center;
-  animation: zoomInOutMobile 8s ease-in-out infinite; 
   justify-content: center;
   align-items: center;
 }
-@keyframes zoomInOutMobile {
+
+/* Animation for desktop views */
+@keyframes zoomInOutpc {
   0% {
     transform: scale(1); /* Start at original size */
     transform-origin: center center; /* Scaling from the center */
@@ -487,7 +488,20 @@ a:focus {
     transform: scale(1); /* Zoom back to original size */
     transform-origin: center center; /* Ensuring scale happens from the center */
   }
+}
 
+/* Media query for desktop (e.g., screens larger than 1024px) */
+@media (min-width: 1024px) {
+  .banner {
+    animation: zoomInOutpc 8s ease-in-out infinite; /* Apply animation only for desktop */
+  }
+}
+
+/* Media query for mobile devices (optional) */
+@media (max-width: 1023px) {
+  .banner {
+    animation: none; /* Disable animation for mobile */
+  }
 }
 
 
@@ -1476,6 +1490,10 @@ a:focus {
   opacity: 1;
 }
 
+.about-content{
+  text-align: center;
+}
+
 /*# sourceMappingURL=maps/style.css.map */
 
 
@@ -1492,9 +1510,7 @@ a:focus {
 
 
 
-.about-content{
-  text-align: center;
-}
+
 @media (max-width: 480px) {
   .about-img {
     display: flex; /* Ensure the parent is a flex container */
@@ -1515,4 +1531,4 @@ a:focus {
     margin-bottom: 10px; /* Optional: Add space below the image */
   }
 }
-
+}
